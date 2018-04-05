@@ -63,13 +63,17 @@ def discout_and_normalize_rewards(all_rewards, discout_rate):
     reward_std = flat_rewards.std()
     return [(discounted_rewards - reward_mean) / reward_std for discounted_rewards in all_discounted_rewards]
 
+############
+# TRAINING #
+############
+
 env = gym.make("CartPole-v0")
 
 num_game_rounds = 10
 max_game_steps = 1000
 num_interations = 1000
 discount_rate = 0.9
-"""
+
 with tf.Session() as sess:
     sess.run(init)
 
@@ -109,7 +113,7 @@ with tf.Session() as sess:
     print("SAVING GRAPH AND SESSION")
     meta_graph_def = tf.train.export_meta_graph(filename='D:/github/reinforcement_learning/models/my-1000-step-model.meta')
     saver.save(sess, 'D:/github/reinforcement_learning/models/my-1000-step-model')
-"""
+
 #######
 # RUN #
 #######

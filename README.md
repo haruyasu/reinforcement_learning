@@ -1,3 +1,3 @@
 # Reinforcement Learning
-## OpenAI
+## OpenAI Gym
 http://gym.openai.com/

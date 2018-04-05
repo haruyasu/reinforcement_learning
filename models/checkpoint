@@ -1,0 +1,2 @@
+model_checkpoint_path: "D:/github/reinforcement_learning/models/my-1000-step-model"
+all_model_checkpoint_paths: "D:/github/reinforcement_learning/models/my-1000-step-model"
